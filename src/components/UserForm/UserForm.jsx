@@ -35,11 +35,7 @@ const UserForm = () => {
 
   return (
     <Container>
-      <Form
-        action={`https://formsubmit.co/${email}`}
-        method="POST"
-        message={JSON.stringify(card)}
-      >
+      <Form action={`https://formsubmit.co/${email}`} method="POST">
         <LabelForm>
           Name
           <InputForm
