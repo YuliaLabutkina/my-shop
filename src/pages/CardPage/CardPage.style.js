@@ -13,4 +13,10 @@ const Quantity = styled.span`
   margin-right: 54px;
 `;
 
-export { ListItem, Text, Quantity };
+const Messages = styled.div`
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: red;
+`;
+
+export { ListItem, Text, Quantity, Messages };

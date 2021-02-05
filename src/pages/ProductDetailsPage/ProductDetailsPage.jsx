@@ -6,7 +6,11 @@ import Button from '../../components/Button/Button';
 import { getProducts } from '../../redux/product/product-selector';
 import productActions from '../../redux/product/product-action';
 
-import { Container, ProductColor } from './ProductDetailsPage.style';
+import {
+  Container,
+  ProductColor,
+  SelectContainer,
+} from './ProductDetailsPage.style';
 
 const ProductDetailsPage = ({ match, history }) => {
   const {
@@ -72,7 +76,7 @@ const ProductDetailsPage = ({ match, history }) => {
         </ProductColor>
         <div>
           <p>Price: {prise}$</p>
-          <div>
+          <SelectContainer>
             <select name="something" value={something} onChange={addSomething}>
               <option value="0">0$</option>
               <option value="10">Small 10$</option>
@@ -80,7 +84,7 @@ const ProductDetailsPage = ({ match, history }) => {
               <option value="30">Large 30$</option>
             </select>
             <button onClick={isClearPrice}>Clear</button>
-          </div>
+          </SelectContainer>
           <div>
             <button onClick={isSubtract} disabled={amount < 2 ? true : false}>
               -1

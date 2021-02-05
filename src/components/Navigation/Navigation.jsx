@@ -29,16 +29,10 @@ const Navigation = () => {
       >
         Home
       </NavLink>
-      <NavLink
-        to={routes.cardPage}
-        className="navLink"
-        activeClassName="navLink--active"
-      >
-        <Menu onMouseEnter={showMenu} onMouseLeave={hideMenu}>
-          Card
-          {menu && card.length > 0 && <CardList card={card} />}
-        </Menu>
-      </NavLink>
+      <Menu onMouseEnter={showMenu} onMouseLeave={hideMenu}>
+        Card
+        {menu && card.length > 0 && <CardList card={card} />}
+      </Menu>
     </div>
   );
 };

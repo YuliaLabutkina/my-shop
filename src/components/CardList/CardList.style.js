@@ -9,4 +9,19 @@ const List = styled.ul`
   color: black;
 `;
 
-export { List };
+const ListItem = styled.li`
+  display: flex;
+  justify-content: space-between;
+  width: 266px;
+  background-color: #c0c0c0;
+`;
+
+const Text = styled.span`
+  margin-right: 24px;
+`;
+
+const Button = styled.button`
+  width: 266px;
+`;
+
+export { List, Text, ListItem, Button };

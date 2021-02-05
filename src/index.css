@@ -31,3 +31,7 @@ img {
 .navLink--active {
   color: red;
 }
+
+button {
+  cursor: pointer;
+}

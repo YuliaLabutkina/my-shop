@@ -19,7 +19,6 @@ const isAddToCard = (state, { payload }) => {
       return product;
     });
   }
-
   return [...state, payload];
 };
 
