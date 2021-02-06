@@ -50,12 +50,9 @@ const products = createReducer(initialState, {
 });
 
 const card = createReducer([], {
-  [productActions.addToCard]: (state, { payload }) =>
-    isAddToCard(state, { payload }),
-  [productActions.addToCardOneProduct]: (state, { payload }) =>
-    isAddToCardOneProduct(state, { payload }),
-  [productActions.delToCard]: (state, { payload }) =>
-    isDelToCard(state, { payload }),
+  [productActions.addToCard]: isAddToCard,
+  [productActions.addToCardOneProduct]: isAddToCardOneProduct,
+  [productActions.delToCard]: isDelToCard,
 });
 
 const productReducer = combineReducers({

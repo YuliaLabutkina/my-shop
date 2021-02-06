@@ -11,7 +11,6 @@ const createProduct = (prod = []) => {
 
     if (products.length === 0 || !productId.find(id => id === index)) {
       products.push({ id: index, price: createRandomPrice(), color: color });
-      // products.push({ [id]: { price: createRandomPrice(), color: color } });
     }
   }
   return products;
