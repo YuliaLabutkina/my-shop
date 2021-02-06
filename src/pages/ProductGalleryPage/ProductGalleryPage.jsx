@@ -2,9 +2,9 @@ import { useSelector, useDispatch } from 'react-redux';
 
 import Product from './Product/Product';
 import Button from '../../components/Button/Button';
-import { getProducts } from '../../redux/product/product-selector';
+import { getProducts } from '../../redux/selectors';
 import createProduct from '../../js/createProduct';
-import productActions from '../../redux/product/product-action';
+import cardActions from '../../redux/product/product-action';
 
 import { List, ButtonContainer } from './ProductGalleryPage.style';
 
@@ -14,7 +14,7 @@ const ProductGalleryPage = () => {
 
   const addNewProducts = () => {
     const newProducts = createProduct(products);
-    dispatch(productActions.addProducts(newProducts));
+    dispatch(cardActions.addProducts(newProducts));
   };
 
   return (

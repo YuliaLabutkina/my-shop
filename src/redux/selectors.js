@@ -1,7 +1,7 @@
 import { createSelector } from '@reduxjs/toolkit';
 
-const getProducts = state => state.product.products;
-const getCard = state => state.product.card;
+const getProducts = state => state.product;
+const getCard = state => state.card;
 
 const getSumOfUnits = createSelector([getCard], card => {
   return card.reduce((acc, el) => acc + el.amount, 0);

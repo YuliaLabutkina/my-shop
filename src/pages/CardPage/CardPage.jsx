@@ -1,11 +1,7 @@
 import { useEffect } from 'react';
 import { useSelector } from 'react-redux';
 
-import {
-  getCard,
-  getSumOfUnits,
-  getOrderAmount,
-} from '../../redux/product/product-selector';
+import { getCard, getSumOfUnits, getOrderAmount } from '../../redux/selectors';
 import CardPageItem from './CardPageItem/CardPageItem';
 import UserForm from '../../components/UserForm/UserForm';
 import routes from '../../routes';

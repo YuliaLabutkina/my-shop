@@ -1,10 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
-import {
-  getOrderAmount,
-  getSumOfUnits,
-} from '../../redux/product/product-selector';
+import { getOrderAmount, getSumOfUnits } from '../../redux/selectors';
 import routes from '../../routes';
 import CardItem from './CardItem/CardItem';
 import { List, ListItem, Text, Button } from './CardList.style';

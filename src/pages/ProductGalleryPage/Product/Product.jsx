@@ -1,14 +1,14 @@
 import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 
-import productActions from '../../../redux/product/product-action';
+import cardActions from '../../../redux/card/card-action';
 import { ProductColor } from './Product.style';
 
 const Product = ({ price, color, id }) => {
   const dispatch = useDispatch();
 
   const addProduct = () => {
-    dispatch(productActions.addToCard({ id, price, color, amount: 1 }));
+    dispatch(cardActions.addToCard({ id, price, color, amount: 1 }));
   };
 
   return (

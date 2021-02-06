@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 
 import routes from '../../routes';
 import CardList from '../CardList/CardList';
-import { getCard } from '../../redux/product/product-selector';
+import { getCard } from '../../redux/selectors';
 import { Menu } from './Navigation.style';
 
 const Navigation = () => {

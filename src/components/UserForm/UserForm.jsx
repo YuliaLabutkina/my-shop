@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useSelector } from 'react-redux';
 
-import { getCard } from '../../redux/product/product-selector';
+import { getCard } from '../../redux/selectors';
 import {
   Container,
   Form,

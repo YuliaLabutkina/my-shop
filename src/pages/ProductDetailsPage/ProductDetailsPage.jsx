@@ -3,8 +3,8 @@ import { useSelector, useDispatch } from 'react-redux';
 
 import routes from '../../routes';
 import Button from '../../components/Button/Button';
-import { getProducts } from '../../redux/product/product-selector';
-import productActions from '../../redux/product/product-action';
+import { getProducts } from '../../redux/selectors';
+import cardActions from '../../redux/card/card-action';
 
 import {
   Container,
@@ -57,7 +57,7 @@ const ProductDetailsPage = ({ match, history }) => {
   const isAddToCard = () => {
     const productId = something ? `${product.id}/${something}` : product.id;
     dispatch(
-      productActions.addToCard({
+      cardActions.addToCard({
         ...product,
         id: productId,
         amount: amount,

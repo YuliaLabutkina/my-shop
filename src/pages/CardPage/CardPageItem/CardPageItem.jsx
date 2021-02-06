@@ -1,6 +1,6 @@
 import { useDispatch } from 'react-redux';
 
-import productActions from '../../../redux/product/product-action';
+import cardActions from '../../../redux/card/card-action';
 import { Item, ColorContainer, Container } from './CardPageItem.style';
 
 const CardPageItem = ({ card }) => {
@@ -8,11 +8,11 @@ const CardPageItem = ({ card }) => {
   const dispatch = useDispatch();
 
   const isAddToCard = () => {
-    dispatch(productActions.addToCardOneProduct(id));
+    dispatch(cardActions.addToCardOneProduct(id));
   };
 
   const isDelToCard = () => {
-    dispatch(productActions.delToCard(id));
+    dispatch(cardActions.delToCard(id));
   };
 
   return (
